@@ -231,7 +231,6 @@ body {
 }
 
 .cart-text__muted {
-    text-align: center;
     font-size: 1.5rem;
     color: var(--text-muted)
 }    
@@ -241,4 +240,3 @@ body {
     font-size: 1.8rem;
     color: var(--text-main);
 }
-.counter-wrapper { cursor: pointer; }

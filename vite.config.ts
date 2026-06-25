@@ -8,9 +8,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        basket: resolve(__dirname, 'basket.html'),
-        card: resolve(__dirname, 'card.html')
+        main: resolve(__dirname, 'index.html')
       }
     }
   }
