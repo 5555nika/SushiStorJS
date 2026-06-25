@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>   
+  <script type="module" crossorigin src="./assets/main-yMNrKzTE.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-CzcViq4i.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="s.png" width="80" alt="суши и пицца" class="logo">
+            <h1 class="site-title">Доставка роллов</h1>
+            <p class="lead">Свежие ингредиенты • Быстрая доставка</p>
+        </div>
+    </header>
+
+    <div class="container mb-5" id="app">
+        <div class="row">
+
+            <!-- Товары -->
+            <div class="col-md-8">
+                <div class="row" id="products-container">
+
+                    <!-- Товар 1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-id="01">
+                            <img src="./fish/1.jpg" alt="Филадельфия" class="product-img">
+                            <div class="card-body">
+                                <h4 class="item-title">Филадельфия</h4>
+                                <p data-items-in-box class="text-muted"><small>6 шт. • Сливочный сыр, лосось</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items-control" data-action="minus">−</div>
+                                        <div class="items-current" data-counter>1</div>
+                                        <div class="items-control" data-action="plus">+</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-weigth">180 гр.</div>
+                                        <div class="price-currency">270 ₽</div>
+                                    </div>
+                                </div>
+                                <button data-cart class="btn btn-online-warning">+ в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 2 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-id="02">
+                            <img src="./fish/2.jpg" alt="Калифорния" class="product-img">
+                            <div class="card-body">
+                                <h4 class="item-title">Калифорния</h4>
+                                <p data-items-in-box class="text-muted"><small>6 шт. • Крабовое мясо, авокадо</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items-control" data-action="minus">−</div>
+                                        <div class="items-current" data-counter>1</div>
+                                        <div class="items-control" data-action="plus">+</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-weigth">180 гр.</div>
+                                        <div class="price-currency">300 ₽</div>
+                                    </div>
+                                </div>
+                                <button data-cart class="btn btn-online-warning">+ в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 3 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-id="03">
+                            <img src="./fish/3.jpg" alt="Запеченный лосось" class="product-img">
+                            <div class="card-body">
+                                <h4 class="item-title">Запеченный лосось</h4>
+                                <p data-items-in-box class="text-muted"><small>6 шт. • Острый соус, креветка</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items-control" data-action="minus">−</div>
+                                        <div class="items-current" data-counter>1</div>
+                                        <div class="items-control" data-action="plus">+</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-weigth">180 гр.</div>
+                                        <div class="price-currency">360 ₽</div>
+                                    </div>
+                                </div>
+                                <button data-cart class="btn btn-online-warning">+ в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Товар 4 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" data-id="04">
+                            <img src="./fish/5.jpg" alt="Маки" class="product-img">
+                            <div class="card-body">
+                                <h4 class="item-title">Маки с огурцом</h4>
+                                <p data-items-in-box class="text-muted"><small>6 шт. • Классика</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items-control" data-action="minus">−</div>
+                                        <div class="items-current" data-counter>1</div>
+                                        <div class="items-control" data-action="plus">+</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-weigth">180 гр.</div>
+                                        <div class="price-currency">205 ₽</div>
+                                    </div>
+                                </div>
+                                <button data-cart class="btn btn-online-warning">+ в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Корзина -->
+            <div class="col-md-4">
+                <div class="card cart-card">
+                    <div class="card-body">
+                        <h2 class="cart-title" style="margin-bottom: 1rem;">Ваш заказ</h2>
+                        
+                        <div data-cart-empty class="none" >
+                            <div style="font-size: 2rem; margin-bottom: 1rem;">🛒</div>
+                            <div class="text-muted">Корзина пока пуста</div>
+                        </div>
+
+                        <div class="cart-wrapper">
+                            <!-- Items will appear here -->
+                        </div>
+
+                        <div class="cart-total" style="padding-top: 1rem; border-top: 1px solid #eee; margin-top: 1rem;">
+                            <div data-cart-delivery class=" d-none" style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                <span style="font-weight: 500;">Доставка:</span>
+                                <span class="delivery-cost" style="color: #ee4b0b;">Бесплатно</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span style="font-size: 1.8rem; font-weight: bold;">Итого:</span>
+                                <div>
+                                    <span class="total-price" style="font-size: 1.8rem; font-weight: bold;">0</span>
+                                    <span class="rouble" style="font-size: 1.8rem; font-weight: bold;">₽</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="order-form" style="margin-top: 2rem;">
+                            <h3 style="margin-bottom: 1.5rem; font-weight: bold;">Оформление</h3>
+                            <form>
+                                <input type="tel" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="+7 (___) ___-__-__">
+                                <button type="submit" class="btn-online-warning">Заказать сейчас</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
