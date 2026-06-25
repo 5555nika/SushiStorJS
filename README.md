@@ -1,5 +1,7 @@
 # Sushi Cart Application
 
+https://5555nika.github.io/SushiStorJS
+
 A simple and functional shopping cart application for a sushi restaurant. Built to practice dynamic DOM manipulation and state management.
 
 ## Features
