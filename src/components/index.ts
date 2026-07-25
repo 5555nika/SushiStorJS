@@ -32,8 +32,8 @@ const deliveryCost = document.querySelector('.delivery-cost')  as HTMLElement
             deliveryCost.classList.add('free')
             deliveryCost.textContent = 'бесплатно'
         } else {
-            deliveryCost.classList.add('free')
-            deliveryCost.textContent = '$25'
+            deliveryCost.classList.remove('free')
+            deliveryCost.textContent = '250 ₽'
         }
     localStorage.setItem('cart', cartWrapper.innerHTML)
     }
@@ -41,7 +41,11 @@ const deliveryCost = document.querySelector('.delivery-cost')  as HTMLElement
     function loadCart () {
         const savedCart = localStorage.getItem('cart')
         if (savedCart) {
-            cartWrapper.innerHTML = savedCart
+            if (savedCart.includes('&lt;') || savedCart.includes('&amp;')) {
+                localStorage.removeItem('cart')
+            } else {
+                cartWrapper.innerHTML = savedCart
+            }
             toggleStatusCart()
         }
     }
@@ -105,7 +109,8 @@ const deliveryCost = document.querySelector('.delivery-cost')  as HTMLElement
                 <div class="cart-item" data-id="${productInfo.id}">
                     <div class="cart-body">
                         <div class="cart-item__img">
-                            <img src="${productInfo.imgSrc}" alt="${productInfo.title}">
+                            <img src="${productInfo.imgSrc}" alt="${productInfo.title}">  
+                       
                         </div>
                         <div class="cart-item__details">
                             <div class="cart-item__title">${productInfo.title}</div>
@@ -122,7 +127,7 @@ const deliveryCost = document.querySelector('.delivery-cost')  as HTMLElement
                             </div>
                         </div>
                     </div>
-                </div> `
+                </div>`
             cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)
             }
         const dataCounter = card.querySelector('[data-counter]')  as HTMLElement
